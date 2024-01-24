@@ -31,6 +31,22 @@
   const itemsList = document.querySelector('.plates');
   const items = [];
 
+  function addItem(e){
+    e.preventDefault();
+    const text = this.querySelector('[name=item]').value;
+    const item = {
+      text,
+      done: false
+    }
+    this.reset();
+    items.push(item);
+    this.reset();
+
+    function populateList(plates = [], plateList){
+
+    }
+  }
+
 </script>
 
 
